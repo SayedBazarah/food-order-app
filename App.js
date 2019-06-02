@@ -20,11 +20,14 @@ const StackNavigator = new createStackNavigator({
     }
   },
   Explore: {
-    screen: TabNavigator
+    screen: TabNavigator,
+    navigationOptions:{
+      header: null
+    }
   }
 })
 
-const AppContainer = new createAppContainer(StackNavigator)
+const AppContainer = new createAppContainer(TabNavigator)
 export default class App extends React.Component {
 
   render() {
