@@ -5,6 +5,12 @@ import { createStackNavigator, createAppContainer, createBottomTabNavigator } fr
 
 //import screens
 import Welcome from './src/screen/Welcome';
+import Discover from './src/screen/Discover';
+const TabNavigator = new createBottomTabNavigator({
+  Explore:{
+    screen: Discover
+  }
+})
 
 const StackNavigator = new createStackNavigator({
   Welcome: {
@@ -12,6 +18,9 @@ const StackNavigator = new createStackNavigator({
     , navigationOptions:{ 
       header: null
     }
+  },
+  Explore: {
+    screen: TabNavigator
   }
 })
 

@@ -54,7 +54,7 @@ export default class Welcome extends Component {
 
                     />
 
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Explore')}>
                         <Text style={{color:'#FFF'}}>Login</Text>
                     </TouchableOpacity>
 
