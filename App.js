@@ -27,7 +27,7 @@ const StackNavigator = new createStackNavigator({
   }
 })
 
-const AppContainer = new createAppContainer(TabNavigator)
+const AppContainer = new createAppContainer(StackNavigator)
 export default class App extends React.Component {
 
   render() {
